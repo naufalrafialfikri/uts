@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Web Sederhana</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<nav class="navbar">
+		<h1 class="logo">MENU</h1>
+		<ul class="nav-link">
+			<li class="active"><a href="biodata.html">Biodata</a></li>
+			<li><a href="pendidikan.html">Pendidikan</a></li>
+			<li><a href="jadwalkuliah.html">Jadwal Kuliah</a></li>
+			<li><a href="aktivitas.html">Aktivitas</a></li>
+			<li><a href="portofolio.html">Portofolio</a></li>
+		</ul>
+		<img src="btn1-removebg-preview.png" alt="" class="menu-btn">
+		
+	</nav>
+	<header>
+		<div class="header-content">
+			<h2>Selamat Datang Di Webside Saya</h2>
+			<div class="line"></div>
+			<h1>Webside Sederhana</h1>
+			<a href="" class="ctn">Learn More</a>
+			
+		</div>
+	</header>
+
+	<script>
+		const menuBtn = document.querySelector('.menu-btn')
+		const navlink = document.querySelector('.nav-link')
+
+		menuBtn.addEventListener('click' ,()=>{
+			navlink.classList.toggle('mobile-menu')
+		})
+	</script>
+</body>
+</html>
